@@ -4,16 +4,19 @@ import aiohttp
 import json
 import logging
 from fireworks.client import Fireworks
+from .image_provider import ImageProvider
 
 logger = logging.getLogger(__name__)
 
 class ModelProvider:
+    
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.provider = os.getenv("MODEL_PROVIDER", "fireworks")
         
         if self.provider == "fireworks":
             self.fireworks_client = Fireworks(api_key=api_key)
+            self.image_provider = ImageProvider(api_key=api_key)
         elif self.provider == "openai":
             import openai
             openai.api_key = api_key

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Image Agent</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>Sentient Image Agent</h1>
+                <span>Community-built • Community-owned • Community-aligned</span>
+            </div>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">Team members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">AI</span>
+                    <span class="stat-label">Loyal to Humanity</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat Interface -->
+            <section class="chat-section">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2>Dobby-Unhinged AI Assistant</h2>
+                        <p>Uncensored community-governed opinion-rich human-like responses</p>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-content">
+                                <p>Hello! I'm your Dobby-Unhinged AI assistant. How can I help you today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <div class="template-buttons">
+                            <button class="template-btn" data-template="@creative">@creative</button>
+                            <button class="template-btn" data-template="@technical">@technical</button>
+                            <button class="template-btn" data-template="@detailed">@detailed</button>
+                            <button class="template-btn" data-template="@simple">@simple</button>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="text" id="promptInput" placeholder="Type your message or use @template...">
+                            <button id="sendButton">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Templates Section -->
+            <section class="templates-section">
+                <h3>Available Templates</h3>
+                <div class="templates-grid">
+                    <div class="template-card">
+                        <h4>@creative</h4>
+                        <p>Creative writing template - for stories, poems, and creative content</p>
+                    </div>
+                    <div class="template-card">
+                        <h4>@technical</h4>
+                        <p>Technical explanation template - for detailed technical responses</p>
+                    </div>
+                    <div class="template-card">
+                        <h4>@detailed</h4>
+                        <p>Detailed analysis template - for in-depth analysis</p>
+                    </div>
+                    <div class="template-card">
+                        <h4>@simple</h4>
+                        <p>Simple direct response - straightforward answers</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-icon">🚀</span>
+                        <h4>Fireworks AI</h4>
+                        <p>Powered by Sentient Foundation</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🤖</span>
+                        <h4>Dobby-Unhinged</h4>
+                        <p>Llama-3-70B Model</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🌐</span>
+                        <h4>Community Owned</h4>
+                        <p>Loyal to Humanity</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Sentient Foundation • Community-built AI • <a href="https://sentient.foundation" target="_blank">sentient.foundation</a></p>
+        </footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

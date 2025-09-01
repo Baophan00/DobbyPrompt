@@ -12,7 +12,9 @@ class PromptProvider:
             "creative": "You are a creative writer. Expand on this idea: {prompt}",
             "technical": "As a technical expert, explain: {prompt}",
             "simple": "{prompt}",
-            "detailed": "Provide a detailed analysis of: {prompt}"
+            "detailed": "Provide a detailed analysis of: {prompt}",
+            "image": "Create a detailed prompt for generating an image of: {prompt}. Include style, composition, lighting, and mood details.",
+            "photo": "Generate a photorealistic image description of: {prompt}. Include camera settings, lighting, and environment details."
         }
 
     async def get_template(self, template_name: str) -> str:

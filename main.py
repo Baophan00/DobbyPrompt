@@ -5,8 +5,6 @@ import uvicorn
 import os
 from dotenv import load_dotenv
 from api.endpoints import router as api_router
-from sentient_agent_framework import DefaultServer
-from agents.prompt_agent import PromptAgent
 
 # Load environment variables
 load_dotenv()
@@ -15,16 +13,14 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize agent
-agent = PromptAgent(name="Fireworks Image Agent")
-
 # Create FastAPI app
 app = FastAPI(title="Fireworks AI Agent API", version="1.0.0")
 
-# CORS middleware
+# CORS middleware - SỬA ĐOẠN NÀY
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://0.0.0.0:3000"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
